@@ -1,20 +1,20 @@
-a {
+.link button {
     text-decoration: none;
-    color: white;
+    margin: 20px 20px;
 }
-a:hover, a:active{
-    color: lightgray;
+
+.navp{
+    color: black;
+    font-size: 25px;
+    margin-left: 20px;
+    margin-bottom: 0;
 }
-.navigation-items{
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-mat-toolbar{
-    border-radius: 3px;
-}
-@media(max-width: 959px){
-    mat-toolbar{
-        border-radius: 0px;
-    }
+
+nav {
+    height: 75px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: rgb(253, 201, 201);
 }
