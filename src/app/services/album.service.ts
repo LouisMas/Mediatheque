@@ -1,9 +1,8 @@
 import { Injectable } from '@angular/core';
 import { environment } from 'src/environments/environment';
+import { Album } from 'src/app/models/album.model';
+import { HttpClient } from '@angular/common/http';
 
-@Injectable({
-  providedIn: 'root'
-})
 
 const apiUrlAlbum = environment.API_URL+"/albums";
 @Injectable({

@@ -1,10 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { environment } from 'src/environments/environment';
-
-@Injectable({
-  providedIn: 'root'
-})
+import { Film } from 'src/app/models/film.model'
 
 
 const apiUrlFilm = environment.API_URL+"/Films"

@@ -10,6 +10,9 @@ export class ProductListComponent implements OnInit {
   @Input()
   products : any[] = [];
 
+  @Input()
+  type : string = "";
+
   constructor() { }
 
   ngOnInit(): void {

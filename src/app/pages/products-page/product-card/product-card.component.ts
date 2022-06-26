@@ -9,11 +9,18 @@ export class ProductCardComponent implements OnInit {
 
   @Input()
   produit: any;
-  
-  DEFAULT_IMG : string = "https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Fthumbs.dreamstime.com%2Fb%2Funicorn-with-colorful-hear-on-rainbow-background-147517458.jpg&sp=1656053747Tfbe1d37e0a76991b95180470a251f265dab045609b264686d6af1dda3b95ab48"
+
+  @Input()
+  typeProduct: string="";
+
+IMG_DEFAULT : string =  "https://imgs.search.brave.com/UTL4VUoIdQ7FHKtAXpRLDCAcdyAlLPtCyQo24GWoxA8/rs:fit:632:225:1/g:ce/aHR0cHM6Ly90c2Ux/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC50/aThXVzdhNEg2emJs/RGlEN2pMalVRSGFG/aiZwaWQ9QXBp" ;
+
   constructor() { }
 
   ngOnInit(): void {
+
+    console.log(this.produit)
+    
   }
 
 }

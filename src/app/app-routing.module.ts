@@ -5,10 +5,11 @@ import { HomePageComponent } from './pages/home-page/home-page.component';
 import { ProductsPageComponent } from './pages/products-page/products-page.component';
 
 const routes: Routes = [
-  {path: '', redirectTo: 'home', pathMatch : 'full'},
-  {path: 'home', component: HomePageComponent},
-  {path: 'products', component : ProductsPageComponent},
-  {path: '**', component: NotFoundComponent} // Toujours laisser le path à la fin.
+  {path:'',redirectTo: 'home', pathMatch: "full"},
+  {path:'home',component: HomePageComponent},
+  {path:'product',component: ProductsPageComponent},
+  {path:'product/:type/:id',component: ProductsPageComponent},
+  {path:'**',component:NotFoundComponent}
 ];
 
 @NgModule({
