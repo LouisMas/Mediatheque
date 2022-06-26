@@ -17,6 +17,7 @@ import { ProductsPageComponent } from './pages/products-page/products-page.compo
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ProductCardComponent } from './pages/products-page/product-card/product-card.component';
 import { ProductListComponent } from './pages/products-page/product-list/product-list.component';
+import { GetProductsPageComponent } from './get-products-page/get-products-page.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { ProductListComponent } from './pages/products-page/product-list/product
     ProductsPageComponent,
     ProductCardComponent,
     ProductListComponent,
+    GetProductsPageComponent
   ],
   imports: [
     BrowserModule,
