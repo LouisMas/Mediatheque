@@ -19,6 +19,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ProductCardComponent } from './pages/products-page/product-card/product-card.component';
 import { ProductListComponent } from './pages/products-page/product-list/product-list.component';
 import { GetProductsPageComponent } from './get-products-page/get-products-page.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { GetProductsPageComponent } from './get-products-page/get-products-page.
     MatToolbarModule,
     MatIconModule,
     MatButtonModule,
-    MatCardModule
+    MatCardModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

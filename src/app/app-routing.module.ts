@@ -8,7 +8,7 @@ import { ProductsPageComponent } from './pages/products-page/products-page.compo
 const routes: Routes = [
   {path:'home',component: HomePageComponent},
   {path:'products',component: ProductsPageComponent},
-  {path:'products/:type/:id',component: GetProductsPageComponent},
+  {path:'product/:type/:id',component: GetProductsPageComponent},
   {path:'',redirectTo: 'home', pathMatch: "full"},
   {path:'**',component:NotFoundComponent}
 ];

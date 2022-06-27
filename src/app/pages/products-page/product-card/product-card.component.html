@@ -1,4 +1,4 @@
-<mat-card class="example-card">
+  <mat-card class="example-card">
     <mat-card-header>
       <mat-card-title> {{produit.nom | slice:0:10}}
       <span *ngIf="produit.nom.length > 10">
@@ -24,4 +24,3 @@
       <button class="buttonCard" routerLink="/product/{{typeProduct}}/{{produit.id}}" mat-button>DETAILS</button>
     </mat-card-actions>
   </mat-card>
-

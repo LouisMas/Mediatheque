@@ -32,7 +32,7 @@ export class GetProductsPageComponent implements OnInit {
       const id= this.route.snapshot.paramMap.get('id');
        
       if(id){
-        this.data = this.serviceAlbum.findById(parseInt(id)).subscribe((data: any)=> this.data=data);
+        this.data = this.serviceAlbum.findById(parseInt(id)).subscribe((data)=> this.data=data);
       }
     }
 
