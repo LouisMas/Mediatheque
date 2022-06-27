@@ -1,0 +1,21 @@
+<section class="detail">
+    <div id="about">
+        <div class="imgs">
+         <img  class="imgs" *ngIf="data.img != ''" src={{data.img}} alt="Table Setting">
+         <img class="imgs" *ngIf="!data.img" mat-card-image src="https://imgs.search.brave.com/UTL4VUoIdQ7FHKtAXpRLDCAcdyAlLPtCyQo24GWoxA8/rs:fit:632:225:1/g:ce/aHR0cHM6Ly90c2Ux/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC50/aThXVzdhNEg2emJs/RGlEN2pMalVRSGFG/aiZwaWQ9QXBp" alt="Photo">
+    
+        </div>
+    
+        <div class="explains">
+          <h1>{{data.nom}}</h1><br>
+          <div class="spacer"></div>
+    
+          <h3 *ngIf="!data.artiste" >De {{data.real}} <br> année de sortie  :  {{data.annee}}</h3>
+    
+          <h3 *ngIf="!data.real" >{{data.artiste}} {{data.annee}}</h3>
+          <div class="spacer"></div>
+          <p  *ngIf="data.synopsis != ''"> {{data.synopsis}} </p>
+          <p >{{data.details}} </p>
+        </div>
+      </div>
+    </section>

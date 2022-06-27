@@ -1,0 +1,26 @@
+img{
+    width: 500px;
+    height: 450px;
+  }
+  p{
+    text-align: justify;
+  }
+  #about{
+    margin-top: 70px;
+    display: grid;
+    grid-area: 1fr/1fr 1fr;
+  }
+
+.imgs{width: 100%;}
+
+.explains{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+
+}
+.detail {
+padding-left: 300px;
+padding-right: 300px;
+
+}
