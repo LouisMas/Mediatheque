@@ -20,12 +20,15 @@ export class ProductsPageComponent implements OnInit {
 
    
   constructor(private serviceFilm:FilmHttpService,private serviceAlbum:AlbumHttpService) { 
-    this.serviceFilm.findAll().subscribe((data)=> this.films =data);
+    this.serviceFilm.findAll().subscribe((data)=> this.films=data);
     this.serviceAlbum.findAll().subscribe((data: Album[])=> this.albums=data);
 
 
 }
   ngOnInit(): void {
-    throw new Error('Method not implemented.');
+  }
+
+  debug() {
+    alert(JSON.stringify(this.films))
   }
 }

@@ -1,14 +1,15 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { NotFoundComponent } from './commons/not-found/not-found.component';
+import { GetProductsPageComponent } from './get-products-page/get-products-page.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { ProductsPageComponent } from './pages/products-page/products-page.component';
 
 const routes: Routes = [
-  {path:'',redirectTo: 'home', pathMatch: "full"},
   {path:'home',component: HomePageComponent},
-  {path:'product',component: ProductsPageComponent},
-  {path:'product/:type/:id',component: ProductsPageComponent},
+  {path:'products',component: ProductsPageComponent},
+  {path:'products/:type/:id',component: GetProductsPageComponent},
+  {path:'',redirectTo: 'home', pathMatch: "full"},
   {path:'**',component:NotFoundComponent}
 ];
 
